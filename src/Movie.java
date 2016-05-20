@@ -1,19 +1,19 @@
 
 public class Movie {
 	private String title;
-	private int duration;
+	private Time duration;
 
-	public Movie(String title, int duration) {
+	public Movie(String title, Time duration) {
 		this.title = title;
 		this.duration = duration;
 
 	}
 
-	public int getDuration() {
+	public Time getDuration() {
 		return duration;
 	}
 
-	public void setDuration(int duration) {
+	public void setDuration(Time duration) {
 		this.duration = duration;
 	}
 
