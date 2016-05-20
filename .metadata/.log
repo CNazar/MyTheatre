@@ -20,3 +20,20 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE Problems occurred while trying to save the state of the workbench.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2016-05-20 15:40:41.849
 !MESSAGE The project description file (.project) for 'Theatre' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2016-05-20 16:14:37.917 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-20 16:14:46.739
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ПК'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-05-20 16:16:01.349
+!MESSAGE Failed to initialize Git team provider.
