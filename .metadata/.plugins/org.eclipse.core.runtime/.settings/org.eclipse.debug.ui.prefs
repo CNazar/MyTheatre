@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.debug.ui.PREF_FILTER_LAUNCH_DELETED=true
+org.eclipse.debug.ui.skip_breakpoints_during_run_to_line=false
