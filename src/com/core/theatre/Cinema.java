@@ -20,6 +20,7 @@ public class Cinema {
 		case FRIDAY:
 			this.day=day;
 			open =new Time(11, 00);
+			close=new Time(21,00);
 			map = new TreeMap<Days, Scedule> ();
 			map.put(day, new Scedule());
 			break;
@@ -27,10 +28,11 @@ public class Cinema {
 		case SATURDAY:
 		case SUNDAY:
 			open =new Time(9, 00);
+			close = new Time(23,00);
 			break;
 
 		default:
-			System.out.println("What day is it?");
+			System.out.println("");
 			
 		}
 	}
@@ -42,11 +44,6 @@ public class Cinema {
 //	}
 
 	public void addMovie(Movie movie, Time time){
-		MyScanner sc = MyScanner.getInstance();
-		System.out.println("enter movie and seance ");
-		String title =sc.next();
-		String duration =sc.next();
-		//Movie movie= new Movie(title,duration);
 		this.map.get(day).getSeances().add(new Seance(time, movie));
 	}
 	
@@ -96,6 +93,15 @@ public class Cinema {
 
 	public void setClose(Time close) {
 		this.close = close;
+	}
+
+	@Override
+	public String toString() {		
+		final StringBuilder sb = new StringBuilder("Scedule: ");		
+		sb.append(day);
+		sb.append(" open-").append(open);
+		sb.append(" close-").append(close);	
+		return sb.toString();
 	}
 
 }

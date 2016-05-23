@@ -1,15 +1,13 @@
 package com.core.theatre;
 
-
 public class Time {
 	private int hour;
 	private int min;
 
-	public Time(int hours, int minutes)  {
+	public Time(int hours, int minutes) {
 		try {
 			setTime(hours, minutes);
 		} catch (MyException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -18,11 +16,11 @@ public class Time {
 		setTime(0, 0);
 	}
 
-	public void setTime(int hours, int minutes) throws MyException   {
-		if (hours <= 0 || hours > 24){
+	public void setTime(int hours, int minutes) throws MyException {
+		if (hours <= 0 || hours > 24) {
 			throw new MyException(hours, minutes);
 		}
-         	
+
 		hour = hours;
 		if (0 <= minutes && minutes < 60)
 			min = minutes;
@@ -42,7 +40,7 @@ public class Time {
 			incrementHours();
 			min = 0;
 		}
-			
+
 	}
 
 	public int getHour() {
@@ -54,7 +52,7 @@ public class Time {
 	}
 
 	public void printTime() {
-		if (hour < 10)	
+		if (hour < 10)
 			System.out.print("0");
 		System.out.print(hour + ":");
 

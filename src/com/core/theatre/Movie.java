@@ -30,6 +30,10 @@ public class Movie {
 
 	@Override
 	public String toString() {
-		return "Movie [title=" + title + ", duration=" + duration + "]";
+		final StringBuilder sb = new StringBuilder("Movie: ");		
+		sb.append("'").append(title).append('\'');
+		sb.append(", duration: ").append(duration);
+		return sb.toString();
+		
 	}
 }

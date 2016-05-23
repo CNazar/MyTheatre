@@ -61,5 +61,12 @@ public class Seance implements Comparable<Seance> {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Seance:"+  movie + " startTime=" + startTime + ", endTime=" + endTime ;
+	}
+	
 	
 }
